@@ -1,1 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://aladin.cds.unistra.fr/AladinLite/api/v3/latest/aladin.min.css" />
+    <script type="text/javascript" src="https://aladin.cds.unistra.fr/AladinLite/api/v3/latest/aladin.min.js" charset="utf-8"></script>
+</head>
+<body>
+    <div id="aladin-lite-div" style="width:600px;height:400px;"></div>
 
+    <script type="text/script">
+        // Aladin 라이브러리 초기화
+        let aladin;
+        A.init.then(() => {
+            aladin = A.aladin('#aladin-lite-div', {
+                target: 'M 45', // 대상 지정 (예: 플레이아데스 성단)
+                fov: 2 // 화각 (Degrees)
+            });
+        });
+    </script>
+</body>
+</html>
